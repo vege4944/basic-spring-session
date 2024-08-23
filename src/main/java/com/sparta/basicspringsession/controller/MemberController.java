@@ -2,9 +2,6 @@ package com.sparta.basicspringsession.controller;
 
 import com.sparta.basicspringsession.dto.*;
 import com.sparta.basicspringsession.service.MemberService;
-import jakarta.persistence.Entity;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -40,7 +37,8 @@ public class MemberController { // 컨트롤러는 무엇을 넣고 받고싶은
     }
 
     @DeleteMapping("members/{memberId}")
-    public void deleteMember(@PathVariable Long memberId) {memberService.deleteMember(memberId);
+    public void deleteMember(@PathVariable Long memberId) {
+        memberService.deleteMember(memberId);
     }
 
 }
