@@ -25,12 +25,12 @@ public class MemberController { // 컨트롤러는 무엇을 넣고 받고싶은
     }
 
     @GetMapping("/members")
-    public ResponseEntity<MemberSimpleResponseDto> getMembers() {
+    public ResponseEntity<List<MemberSimpleResponseDto>> getMembers() {
         return ResponseEntity.ok(memberService.getMembers());
     }
 
     @GetMapping("/members/{memberId}")
-    public ResponseEntity<MemberUpdateResponseDto> getMember(@PathVariable Long memberId) {
+    public ResponseEntity<MemberDetailResponseDto> getMember(@PathVariable Long memberId) {
         return ResponseEntity.ok(memberService.getMember(memberId));
     }
 

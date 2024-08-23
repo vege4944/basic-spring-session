@@ -37,7 +37,7 @@ public class MemberService {
         return dtoList;
     }
 
-    public MemberDetailResponseDto gtMember(Long memberId) {
+    public MemberDetailResponseDto getMember(Long memberId) {
         Member member = memberRepository.findById(memberId).orElseThrow(() -> new NullPointerException("멤버가 없습니다."));
         return new MemberDetailResponseDto(member.getId(), member.getName());
     }
@@ -61,4 +61,4 @@ public class MemberService {
 
 
 
-}
+
