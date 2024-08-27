@@ -10,4 +10,5 @@ public class BasicSpringSessionApplication {
         SpringApplication.run(BasicSpringSessionApplication.class, args);
     }
 
+
 }
