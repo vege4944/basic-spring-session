@@ -31,7 +31,7 @@ public class BoardService {
         );
     }
 
-    public List<BoardSimpleResponseDto> getBoards () {
+    public List<BoardSimpleResponseDto> getBoards () { //simple과 detail 여쭤보기
         List<Board> boardList = boardRepository.findAll();
 
         List<BoardSimpleResponseDto> dtoList = new ArrayList<>();
