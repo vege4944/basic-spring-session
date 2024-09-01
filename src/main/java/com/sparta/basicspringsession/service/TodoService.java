@@ -1,10 +1,10 @@
 package com.sparta.basicspringsession.service;
 
-import com.sparta.basicspringsession.dto.request.TodoSaveRequestDto;
-import com.sparta.basicspringsession.dto.request.TodoUpdateRequestDto;
-import com.sparta.basicspringsession.dto.response.TodoDetailResponseDto;
-import com.sparta.basicspringsession.dto.response.TodoSaveResponseDto;
-import com.sparta.basicspringsession.dto.response.TodoUpdateResponseDto;
+import com.sparta.basicspringsession.dto.todoRequest.TodoSaveRequestDto;
+import com.sparta.basicspringsession.dto.todoRequest.TodoUpdateRequestDto;
+import com.sparta.basicspringsession.dto.todoResponse.TodoDetailResponseDto;
+import com.sparta.basicspringsession.dto.todoResponse.TodoSaveResponseDto;
+import com.sparta.basicspringsession.dto.todoResponse.TodoUpdateResponseDto;
 import com.sparta.basicspringsession.entity.Todo;
 import com.sparta.basicspringsession.repository.TodoRepository;
 import lombok.RequiredArgsConstructor;

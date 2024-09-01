@@ -1,4 +1,4 @@
-package com.sparta.basicspringsession.dto.request;
+package com.sparta.basicspringsession.dto.todoRequest;
 
 import lombok.Getter;
 
